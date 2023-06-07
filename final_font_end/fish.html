@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <title>逢甲網路教室iLearn: 登入本網站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div id="page-header">
+    <div class="flex-container">
+      <div>
+        <img src="//ilearn2.fcu.edu.tw/pluginfile.php/1/theme_essential/logo/1682046989/banner6_%E4%BF%AE2.jpg"
+             class="img-responsive" alt="首頁">
+      </div>
+    </div>
+    <nav class="row">
+      <div class="navbar">
+        <a class="logo" href="#">
+          <img src="home.png" alt="圖片描述" width="25px">
+          首頁
+        </a>
+        <div class="dropdown">
+          <button class="select" onmouseover="changeIcon1()" onmouseout="changeIconBack1()">
+            交流園地
+            <img id="icon1" src="right.png" alt="向右箭頭" width="12px">
+          </button>
+          <div class="dropdown-content">
+            <a href="#">操作指引</a>
+            <a href="#">Q&A彙整</a>
+            <a href="#">新教師課程</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="select" onmouseover="changeIcon2()" onmouseout="changeIconBack2()">
+            線上學習支援
+            <img id="icon2" src="right.png" alt="向右箭頭" width="12px">
+          </button>
+          <div class="dropdown-content">
+            <a href="#">教師篇</a>
+            <a href="#">學生篇</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="select" onmouseover="changeIcon3()" onmouseout="changeIconBack3()">
+            <img id="icon4" src="flag.png" alt="旗子" width="18px">
+            language
+            <img id="icon3" src="right.png" alt="向右箭頭" width="12px">
+          </button>
+          <div class="dropdown-content">
+            <a href="fish.html">正體中文(zh_tw)</a>
+            <a href="fish_en.html">English(en)</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="page-content">
+  <div class="table-row">
+    <div class="table-cell left">
+      <h2>登入</h2>
+
+      <div id="login">
+        <div class="subcontent loginsub">
+
+          <form id="stu" action="http://localhost:3000/api" method="post">
+            <div class="loginform">
+
+              <div class="form-label">
+                <label for="username">帳號</label>
+                <input type="text" name="username" id="username" size="10">
+              </div>
+
+              <div class="form-label">
+                <label for="password">密碼</label>
+                <input type="password" name="password" id="password" size="10">
+              </div>
+
+            </div>
+
+            <div class="rememberpass">
+              <input type="checkbox" name="rememberusername" id="rememberusername">
+              <label for="rememberusername">記住帳號</label>
+            </div>
+
+            <div class="submit">
+              <button type="submit" id="submit" onclick="clearInput()">登入</button>
+            </div>
+          </form>
+
+          <div class="nidforgetpass">
+            <a href="#" target="_blank" style="text-decoration: none;color: #99000F;">NID Forget Password</a>
+          </div>
+
+          <div class="forgetpass">
+            <a href="#" style="text-decoration: none;color: #99000F;">忘記帳號或密碼嗎？</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="desc">您的瀏覽器必須啟動 Cookies 功能</div>
+    </div>
+    <div class="table-cell right">
+      <br><br><br>
+      <div class="f-col">
+        <strong style="font-size:large;text-align:left;">請使用NID帳號/密碼登入平台。</strong>
+      </div>
+      <div class="s-col">
+        <strong style="font-size:large;text-align:left;">欲變更NID密碼，請連結至&nbsp;
+          <a href="#" target="_blank" rel="noreferrer noopener">&nbsp;
+            <img src="https://netid.fcu.edu.tw/image/nidlogo.png" alt="NID">
+          </a>
+        </strong>
+      </div>
+    </div>
+  </div>
+</div>
+<footer id="page-footer">
+  <div id="footer1"></div>
+  <div id="footer2"></div>
+  <div id="footer3">
+    <p style="text-align: center;">©2023 逢甲大學Feng Chia University<br>
+      Copyright2014(c)逢甲大學Feng Chia University Powered by Moodle.<br>
+      台中市西屯區文華路100號+886-4-24517250轉2129 隱私權聲明<br>
+      本站最佳瀏覽解析度為 1024a*768以上
+    </p>
+  </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
